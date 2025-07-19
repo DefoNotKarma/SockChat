@@ -1,4 +1,4 @@
-#🧦 SockChat
+# SockChat
 
 **Sock Chat** is a multithreaded terminal-based chat application built using Python Sockets. It allows multiple users to communicate in real-time over a shared network or across the internet using Tailscale. The app is lightweight, easy to set up, and requires no external dependencies.
 
