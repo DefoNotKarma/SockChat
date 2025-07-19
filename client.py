@@ -11,9 +11,9 @@ LOG_HEADER = 64
 HEADER = 8       # bytes
 LOG_HEADER = 64
 DISCONNECT_MESSAGE = "!dsc"
-PORT = 5050
+PORT = int(input("Enter Port Number : ")) 
 
-SERVER = "192.168.1.8"  # IP you want to connect
+SERVER = str(input("Enter IP : "))
 ADDR = (SERVER, PORT)
 BLANK_HEADER = str(len("")).encode(FORMAT)
 BLANK_HEADER += b' ' * (HEADER - len(BLANK_HEADER))

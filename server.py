@@ -12,8 +12,19 @@ def find_open_port():
         return s.getsockname()[1]
     
  
-PORT = 5050 or find_open_port()
+PORT = find_open_port()
+
+# to run scripts locally or over LAN
 SERVER = socket.gethostbyname(socket.gethostname())
+
+"""
+to run scripts over a public network, uncomment the line under and
+put your tailscale assigned IP in place.
+
+"""
+#SERVER = "100.x.y.z"
+
+
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ADDR = (SERVER, PORT)
