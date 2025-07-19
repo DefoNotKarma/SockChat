@@ -118,4 +118,4 @@ It supports multiple client connections, automatically fetches and displays rece
 * Server dynamically picks an open port.
 * Logs are compressed and fetched when a new client joins.
 * Server auto-cleans disconnected clients.
-
+* Chat logs use a separate 64-byte header (`LOG_HEADER = 64`) to handle larger message payloads without truncation. 
